@@ -120,7 +120,6 @@ public class Program {
         doubleValueBD = BigDecimal.valueOf(valueDouble).setScale(4, RoundingMode.HALF_UP);
         floatValueBD = BigDecimal.valueOf(valueFloat).setScale(4, RoundingMode.HALF_UP);
         int compare = doubleValueBD.compareTo(floatValueBD);
-        System.out.println(compare);
         if (compare == 0) {
             System.out.printf("%sЧисла %s и %s равны.%s%n", Utils.ANSI_PURPLE, valueDouble, valueFloat,
                     Utils.ANSI_RESET);
